@@ -5,7 +5,7 @@ class CustomArray {
   Some(callback) {
     let res = true;
     for (const item of this.items) {
-      if (callback == true) {
+      if (callback(item) {
         break;
       }
     }
